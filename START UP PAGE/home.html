@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<!-- Navbar (sit on top) -->
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><b>GO TRENDS</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+      <a href="#connect" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CONNECT</a>
+      <a href="../SIGN UP PAGE/final.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SIGNUP</a>
+      <a href="../LOGIN FORM PAGE/test.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Learn something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Learn something that matters</span><br>
+    <span class="w3-large">Learn something interesting today!.</span>
+    <p><a href="../COMBO PAGE EXPT/exp7.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a></p>
+  </div>   
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">We Make IT Happen</p>
+  <p class="w3-center w3-large">We provide you with the latest trends in technology and a short 2 minute read on the same. </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Mumbai, India</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +022 25234588</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+   
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center" id="connect">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+ 
+  <a class="w3-button w3-large w3-teal" href="#" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+</footer>
+
+ 
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
+</html>

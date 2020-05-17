@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="utf-8"/>
+ 	<title>Web Page 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" type="text/css" href="p7.css">
+<script src= "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+  
+
+ </head>	
+ <body text="white">
+<script type="text/javascript">
+
+
+$(function() {
+
+    //settings for slider
+    var width = 910;
+    var animationSpeed = 1000;
+    var pause = 4000;
+    var currentSlide = 1;
+
+    //cache DOM elements
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
+
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+
+
+});
+
+</script>
+<!--
+ 	<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+ 	
+ 	<div >
+ 		<img src="new.jpg" style=width:80px;height:80px;"> </img>
+                 
+       <font size="15" color="white" face="Comic Sans MS">Go Trends</font> 
+    </div>-->
+
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../START UP PAGE/home.html" class="w3-bar-item w3-button w3-wide"><b>GO TRENDS</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../SIGN UP PAGE/final.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SIGNUP</a>
+      <a href="../LOGIN FORM PAGE/test.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+    </div>
+  </div>
+</div>  
+<br><br><br>
+        
+ 	<div class="b">
+       <table border="2" width="230" height="500" bgcolor="#721DC7">
+         <tr bgcolor="#5B2C6F"><th>Categories:</th></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc1()"><h3>1.Machine Learning</h3></button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc2()"><h3>2.Blockchain         <h3>    </button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc3()"><h3>3.Cryptocurrency     <h3>    </button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc4()"><h3>4.Data Science     <h3>      </button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc5()"><h3>5.Ethical Hacking    <h3>    </button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc6()"><h3>6.AI   <h3>    </button></td></tr>
+         <tr><td><button name="ai" class="re" type="submit" onclick="loadDoc7()"><h3>7.Neural Networks  <h3>      </button></td></tr>
+       </table>             
+    </div>
+      
+    <span class="mar" id="demo" style="background:#2FB888; color: black;" >
+    <table border="2" width="910" height="485"><tr><td>
+    <div class="container">
+            <!--<div class="header">
+                <h1 class="text-muted">jQuery Basic Slider</h1>
+            </div>-->
+
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide slide1"></li>
+                    <li class="slide slide2"></li>
+                    <li class="slide slide3"></li>
+                    <li class="slide slide4"></li>
+                    <li class="slide slide5"></li>
+                    <li class="slide slide1"></li>
+                </ul>
+            </div>  
+    </div>        
+    </td></tr></table>
+    </span>
+
+    <span class="right">
+<table  border="2" width="168" height="50" bgcolor="#2D0E5F"><tr bgcolor="#5B2C6F"><th valign="top"><a href="../LOGIN FORM PAGE/test.html">Add your own content</a></th></tr></table>
+<br>
+<table  border="2" width="168" height="150" bgcolor="#2E86C1"><tr><th valign="top">Q & A Forum:</th></tr></table>
+<br>
+<table  border="2" width="168" height="150" bgcolor="#2E86C1"><tr><th valign="top">Suggestions:</th></tr></table>
+<br>
+<table  border="2" width="168" height="150" bgcolor="#2E86C1"><tr><th valign="top">Useful links:</th></tr>
+<tr><td><a href="https://github.com/"><font color="white">Github</font></a></td></tr>
+<tr><td><a href="https://www.wikipedia.org/"><font color="white">Wikipedia</font></a></td></tr>
+<tr><td><a href="https://stackoverflow.com/"><font color="white">Stack Overflow</font></a></td></tr>
+<tr><td><a href="https://www.youtube.com/"><font color="white">Youtube</font></a></td></tr>
+</table>
+</span>   
+
+<script>
+function loadDoc1() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ML.txt", true);
+  xhttp.send();
+}
+</script>
+
+ 	
+ </body>
+</html> 

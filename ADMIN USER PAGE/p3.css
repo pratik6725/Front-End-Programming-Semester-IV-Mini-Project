@@ -1,0 +1,185 @@
+body{
+	color:white;
+	background-image: url('g2.jpg');
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+
+.header{
+	height:80px;
+	background-color: black;
+}
+
+.header a{
+	background:white;
+	border-radius:20px;
+}
+
+.header-right{
+	float:right;
+	margin-top:20px;
+	margin-right: 10px;
+}
+
+.lout{
+	height:40px;
+	width:80px;
+	border-radius: 20px;
+}
+
+.lout:hover{
+	background-color:dodgerblue;
+}
+
+#left{
+	float:left;
+	width:180px;
+	background:black;
+	margin-top: 1px;
+	border-top-right-radius:20px;
+	border-top-left-radius: 20px;
+	border-radius:20px;
+}
+
+#profile{
+	margin-top:40px;
+	margin-left:0px;
+}
+
+.dashboard{
+	margin-top:0px;
+	height:40px;
+	width:180px;
+	border-radius:20px;
+}
+
+.dashboard:hover{
+	background:dodgerblue;
+	color:white;
+}
+
+table{
+	color:green;
+	text-align: center;
+	border:1px solid black;
+	padding:20px;
+	font-size: 18px;
+}
+
+tr,th,td{
+	color:purple;
+	text-align: center;
+	padding:10px;
+}
+
+a{
+	color: purple;
+
+}
+
+a:hover{
+	color:gray;
+}
+
+#form1{
+	margin-left:500px;
+	background-color: black;
+	width:400px;
+}
+
+.signupbox{
+	margin-top:300px;
+	width: 1000px;
+	height: 800		px;
+	background: #000;
+	color: purple;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}	
+
+
+h1{
+	margin: 0px;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.signupbox p{
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+.signupbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signupbox input[type="text"],input[type="password"],input[type="number"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
+.signupbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: purple;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	align-content: center;
+	width: 100px;
+}
+
+.signupbox input[type="submit"]:hover
+{
+	cursor: pinter;
+	background: #ffc107;
+	color: #000;
+}
+.signupbox a{
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.signupbox a:hover{
+	color : #ffc107;
+}
+
+#search{
+	width:300px;
+	border-radius:20px;
+	background-color:black;
+	color:green;
+	padding:10px;
+	margin-right:500px;
+}
+
+#right{
+	float:right; 
+}
+
+#t2,#t3{
+	color:black;
+
+}
+
+#t4{
+	color:black;
+}

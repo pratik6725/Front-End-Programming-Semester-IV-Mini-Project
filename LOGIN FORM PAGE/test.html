@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+
+<script>
+
+var k=1;
+
+function Validate(inputText,event)
+{	
+ {
+ var mailformat = /^([a-zA-Z]+)$/;
+ if(!(inputText.value.match(mailformat)))
+ {
+ alert("You have entered an invalid username!");
+ document.form1.text1.focus();
+ return false;
+ k=0;
+ }
+ }
+if(k!=0)
+ {
+ event.preventDefault();
+ var myWindow = window.open("../ADMIN USER PAGE/p3.html","_self");
+ }
+}
+
+
+</script>
+
+</head>
+<body>	
+<div class="loginbox">
+<img src="avatar1.png" class="avatar">
+<h1>Login</h1>
+<form name="zipvalidate" action="">
+ <p>Username</p>
+ <input type="text" name="usr" placeholder="Enter Username">
+ <p>Password</p>
+ <input type="password" name="pw" placeholder="Enter Password">
+ <input type="submit" name="" value="Login" onClick="Validate(zipvalidate.usr,event);">
+ <a href="../FORGOT PASSWORD PAGE/test.html"><center>Forgot Password?</center></a>
+</form>
+</div>
+</body>
+</html>

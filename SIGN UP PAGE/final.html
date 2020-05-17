@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>JS REG EXPRESSIONS</title>
+<link rel="stylesheet" type="text/css" href="final.css">
+<script type="text/javascript">
+
+var k=1;
+
+function ValidateAlpha(evt)
+{
+        var keyCode = (evt.which) ? evt.which : evt.keyCode
+        if (((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)|| keyCode==32)
+        {
+        	alert("Please enter only alphabets in the this field!"); 
+            return false;
+            k=0;
+        }
+            return true;
+}
+
+function Validate(inputText,phone,inputtx,event)
+{	
+
+ {
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(!(inputText.value.match(mailformat)))
+ {
+ alert("You have entered an invalid email address!");
+ document.form1.text1.focus();
+ return false;
+ k=0;
+ }
+ }
+ 
+ { 
+ var passw=  /^[A-Za-z]\w{7,15}$/;
+ if(!(inputtx.value.match(passw)))
+ { 
+ alert('Wrong...! Enter a password between 7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter ');
+ return false;
+ k=0;
+ }
+ }
+
+ {
+  var re = /[+][9][1][7-9]\d{9}/;
+
+  if (!(phone.value.match(re)))
+  {
+    alert("Enter a valid phone number!");
+    return false;
+  k=0;
+  }
+ }
+
+ if(k!=0)
+ {
+  alert("The form is succesfuuly submitted on "+Date());
+  event.preventDefault();
+ var myWindow = window.open("../LOGIN FORM PAGE/test.html","_self");
+ }
+}
+
+</script>
+</head>
+<body>
+<div class="signupbox">
+<h1>Registration</h1>
+<form name="zipvalidate" action="">
+ <p>First Name</p>
+ <input type="text" name="" placeholder="Enter First Name" onKeyPress="return ValidateAlpha(event)">
+ <p>Last Name</p>
+ <input type="text" name="" placeholder="Ente Last Name" onKeyPress="return ValidateAlpha(event)">
+ <!--<p>E-mail id</p>
+ <input type="text" name="" placeholder="Enter E-mail id">-->
+ <p>E-mail id:
+ <input type="text" name="emailid" placeholder="Enter E-mail id"/></p>
+
+ <p>Contact Info</p>
+ <input type="text" name="phone" id="phone" placeholder="Enter Contact No">
+ 
+ <p>Username</p>
+ <input type="text" name="" placeholder="Enter Username">
+ <p>Password</p>
+ <input type="password" name="password" id="password" placeholder="Enter Password">
+ 
+ <!--
+ 	To check a password between 7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter
+--> 	
+ <!--<input type="password" name="" placeholder="Enter Password">-->
+ <p>Re-Enter Password</p>
+ <input type="password" name="" placeholder="Re-Enter Password">
+ <p>Qualification</p>
+ <input type="text" name="" placeholder="Enter Qualification" onKeyPress="return ValidateAlpha(event)">
+ <p>Profession</p>
+ <input type="text" name="" placeholder="Enter Profession" onKeyPress="return ValidateAlpha(event)">
+<br>
+ <input type="submit" name="" value="Register" onClick="Validate(zipvalidate.emailid,zipvalidate.phone,zipvalidate.password,event);">
+</form>
+</div>
+</body>
+</html>

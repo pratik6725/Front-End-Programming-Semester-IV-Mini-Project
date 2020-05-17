@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+
+<script>
+
+var k=1;
+
+function Validate(inputText,event)
+{	
+ {
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(!(inputText.value.match(mailformat)))
+ {
+ alert("You have entered an invalid email address!");
+ document.form1.text1.focus();
+ return false;
+ k=0;
+ }
+ }
+if(k!=0)
+ {
+ event.preventDefault();
+ alert("Password reset link sent to your registered emailid. Redirecting to login page.")
+ var myWindow = window.open("../LOGIN FORM PAGE/test.html","_self");
+ }
+}
+
+</script>
+
+</head>
+<body>	
+<div class="loginbox">
+<img src="avatar1.png" class="avatar">
+<h1>Reset Password</h1>
+<form name="zipvalidate" action="">
+ <p>Email-id</p>
+ <input type="text" name="emailid" placeholder="Enter registered email-id">
+ <input type="submit" name="" value="Get Reset Link" onClick="Validate(zipvalidate.emailid,event);">
+</form>
+</div>
+</body>
+</html>
